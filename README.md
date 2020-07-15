@@ -5,7 +5,7 @@ Yolo v3 on coco name Dataset
 
 [Yolo V3 opencv-python Source](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
 
-After applying the above yolo v3 model on my sample image. The output I received looks like this.
+After applying the above Yolo v3 model on my sample image. The output I received looks like this.
 
 
 ![Pretentious at IKEA](https://raw.githubusercontent.com/imsahil007/YoloV3-CustomData/master/Coco%20Names%20Dataset/predictions.jpg)
@@ -13,12 +13,12 @@ After applying the above yolo v3 model on my sample image. The output I received
 # [Part 2]
 
 Yolo v3 on Custom Dataset.
-Here, I am detecting detecting Pikachu(Pokemon character). I generated the dataset myself.
+Here, I am detecting Pikachu(Pokemon character). I generated the dataset myself.
 Steps for creating Dataset:
 * Web crawling using python. Use [this](https://github.com/scrapy/scrapy)
 * If you are lazy like me. You can use a chrome extension. [Here](https://chrome.google.com/webstore/detail/download-all-images/ifipmflagepipjokmbdecpmjbibjnakm?hl=en). There are a lot of extensions like this.
 
-> Note: I was too lazy for doing this. So, I didn't filter out the images. My dataset contains all type of pikachu images. Even toys, stickers and the Detective Pikachu  as well. Fortunately, it turned out to be a great model as it can detect Ryan Reynold's Pikachu as well. But don't be like me. Be smart!!
+> Note: I was too lazy for doing this. So, I didn't filter out the images. My dataset contains all type of Pikachu images. Even toys, stickers and the Detective Pikachu as well. Fortunately, it turned out to be a great model as it can detect Ryan Reynold's Pikachu as well. But don't be like me. Be smart!!
 
 ![Pokemon Gif](https://github.com/imsahil007/YoloV3-CustomData/raw/master/Custom%20Dataset/Sample%20Output/image3.gif)
 
@@ -53,19 +53,19 @@ data
   test=data/customdata/custom.txt 
   names=data/customdata/custom.names
 ```
-6. As you it a poor idea to keep test and train data same, but the point of this repo is to get you up and running with YoloV3 asap. You'll probably do a mistake in writing to custom.txt file. This is how our file looks like (please note the .s and /s):
+6. As you know its a poor idea to keep test and train data same, but the point of this repo is to get you up and running with YoloV3 asap. You'll probably do a mistake in writing to custom.txt file. This is how our file looks like (please note the .s and /s):
 ```
 ./data/customdata/images/img001.jpg
 ./data/customdata/images/img002.jpg
 ./data/customdata/images/img003.jpg
 ...
 ```
-7. You need to add custom.names file as you can see above. For our example, we downloaded images of pikachu. Our custom.names file look like this:
+7. You need to add custom.names file as you can see above. For our example, we downloaded images of Pikachu. Our custom.names file look like this:
 ```
 pikachu
 ```
 8. Pikachu above will have a class index of 0. 
-9. For COCO's 80 classes, VOLOv3's output vector has 255 dimensions ( (4+1+80)*3). Now we have 1 class, so we would need to change it's architecture.
+9. For COCO's 80 classes, VOLOv3's output vector has 255 dimensions ( (4+1+80)*3). Now we have 1 class, so we would need to change its architecture.
 10. Copy the contents of 'yolov3-spp.cfg' file to a new file called 'yolov3-custom.cfg' file in the data/cfg folder. 
 11. Search for 'filters=255' (you should get entries entries). Change 255 to 18 = (4+1+1)*3
 12. Search for 'classes=80' and change all three entries to 'classes=1'
@@ -73,10 +73,10 @@ pikachu
   * burn_in to 100
   * max_batches to 5000
   * steps to 4000,4500
-14. Don't forget to perform the weight file steps mentioned in the sectio above. 
-15. Run this command `python train.py --data data/customdata/custom.data --batch 10 --cache --cfg cfg/yolov3-custom.cfg --epochs 3 --nosave`
+14. Don't forget to perform the weight file steps mentioned in the section above. 
+15. Run this command `python train.py --data data/customdata/custom.data --batch 10 --cache --cfg cfg/yolov3-custom.cfg --epochs 300 --nosave`
 
- Output of Yolo v3 looks like this:
+ The output of Yolo v3 looks like this:
  
  ![Image 1 ](https://github.com/imsahil007/YoloV3-CustomData/raw/master/Custom%20Dataset/Sample%20Output/image1.jpeg)
  
