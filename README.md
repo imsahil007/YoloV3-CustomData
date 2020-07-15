@@ -8,7 +8,7 @@ Yolo v3 on coco name Dataset
 After applying the above yolo v3 model on my sample image. The output I received looks like this.
 
 
-![Pretentious at IKEA](https://raw.githubusercontent.com/imsahil007/YoloV3-CustomData/master/Coco%20Names%20Dataset/predictions.jpg | width = 50)
+![Pretentious at IKEA](https://raw.githubusercontent.com/imsahil007/YoloV3-CustomData/master/Coco%20Names%20Dataset/predictions.jpg)
 
 # [Part 2]
 
@@ -76,12 +76,9 @@ pikachu
 14. Don't forget to perform the weight file steps mentioned in the sectio above. 
 15. Run this command `python train.py --data data/customdata/custom.data --batch 10 --cache --cfg cfg/yolov3-custom.cfg --epochs 3 --nosave`
 
- These are the images annotated by our model 
+ Output of Yolo v3 looks like this:
  
- ![Image 1 ]()
+ ![Image 1 ](https://github.com/imsahil007/YoloV3-CustomData/raw/master/Custom%20Dataset/Sample%20Output/image1.jpeg)
  
- ![Image 2 ]()
+ ![Image 2 ](https://github.com/imsahil007/YoloV3-CustomData/raw/master/Custom%20Dataset/Sample%20Output/image2.gif)
  
- ![Image 3 ]()
-
-[See the video output here]()
