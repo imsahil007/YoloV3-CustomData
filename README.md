@@ -17,8 +17,8 @@ Here, I am detecting detecting Pikachu(Pokemon character). I generated the datas
 Steps for creating Dataset:
 * Web crawling using python. Use [this](https://github.com/scrapy/scrapy)
 * If you are lazy like me. You can use a chrome extension. [Here](https://chrome.google.com/webstore/detail/download-all-images/ifipmflagepipjokmbdecpmjbibjnakm?hl=en). There are a lot of extensions like this.
->
-Note: I was too lazy for doing this. So, I didn't filter out the images. My dataset contains all type of pikachu images. Even toys, stickers and the Detective Pikachu  as well. Fortunately, it turned out to be a great model as it can detect Ryan Reynold's Pikachu as well. But don't be like me. Be smart!!
+
+> Note: I was too lazy for doing this. So, I didn't filter out the images. My dataset contains all type of pikachu images. Even toys, stickers and the Detective Pikachu  as well. Fortunately, it turned out to be a great model as it can detect Ryan Reynold's Pikachu as well. But don't be like me. Be smart!!
 
 ![Pokemon Gif]()
 
