@@ -6,9 +6,9 @@ Yolo v3 on coco name Dataset
 [Yolo V3 opencv-python Source](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
 
 After applying the above yolo v3 model on my sample image. The output I received looks like this.
- 
 
-![Pretentious at IKEA]()
+
+![Pretentious at IKEA](https://raw.githubusercontent.com/imsahil007/YoloV3-CustomData/master/Coco%20Names%20Dataset/predictions.jpg)
 
 # [Part 2]
 
