@@ -20,7 +20,7 @@ Steps for creating Dataset:
 
 > Note: I was too lazy for doing this. So, I didn't filter out the images. My dataset contains all type of pikachu images. Even toys, stickers and the Detective Pikachu  as well. Fortunately, it turned out to be a great model as it can detect Ryan Reynold's Pikachu as well. But don't be like me. Be smart!!
 
-![Pokemon Gif]()
+![Pokemon Gif](https://github.com/imsahil007/YoloV3-CustomData/raw/master/Custom%20Dataset/Sample%20Output/image3.gif)
 
 [Yolov3 on Custom Dataset Source](https://github.com/theschoolofai/YoloV3)
 
