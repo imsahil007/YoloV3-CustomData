@@ -8,7 +8,7 @@ Yolo v3 on coco name Dataset
 After applying the above Yolo v3 model on my sample image. The output I received looks like this.
 
 
-![Pretentious at IKEA](https://raw.githubusercontent.com/imsahil007/YoloV3-CustomData/master/Coco%20Names%20Dataset/predictions.jpg)
+![Pretentious at IKEA](https://github.com/imsahil007/YoloV3-CustomData/raw/master/Coco%20Names%20Dataset/predictions.jpg)
 
 # [Part 2]
 
